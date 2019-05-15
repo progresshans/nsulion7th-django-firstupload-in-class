@@ -1,0 +1,7 @@
+<h1>여기는 글수정하기 페이지입니다.</h1>
+
+<form action="{% url 'update' board_target.id %}">
+    제목 : <input type="text" name="title" value="{{ board_target.title}}"><br><br>
+    내용 : <textarea rows="10" cols="100" name="content">{{ board_target.text }}</textarea><br><br>
+    <input type="submit" value="수정하기"><br><br>
+</form>

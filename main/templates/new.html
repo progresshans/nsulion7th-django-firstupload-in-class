@@ -1,0 +1,7 @@
+<h1>여기는 글쓰기 페이지입니다.</h1>
+
+<form action="{% url 'create' %}">
+    제목 : <input type="text" name="title"><br><br>
+    내용 : <textarea rows="10" cols="100" name="content"></textarea><br><br>
+    <input type="submit" value="글쓰기"><br><br>
+</form>
